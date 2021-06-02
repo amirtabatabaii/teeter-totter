@@ -8,6 +8,6 @@ Simulation teeter totter game created with Canvas API
 - Then run `npm start` to start server
 - Browser should open and redirect to `http://localhost:3000`
 
-## Demo
+## Demo Page
 
-- https://teetertotter.netlify.app/
+- Click [Here](https://teetertotter.netlify.app/) to view Demo page
