@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        background: #030d2e;
+        color: #fff;
+        text-align: center;
+      }
+
+      canvas {
+        border: solid 0.3em #ffffff;
+        height: 80vh;
+      }
+
+      .score-container {
+        width: 1000px;
+        margin: 15px auto;
+        padding: 10px;
+        display: flex;
+        border: solid 0.2em #ffffff;
+        background: #26429d;
+        font-size: 15px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .score-container div {
+        flex: 1;
+      }
+
+      .btn-container {
+        margin: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="score-container">
+      <div>
+        Total Weight : <b> <span id="leftWeight"></span></b> <br /><br />
+        Total Momentum : <b> <span id="leftMomentum"></span></b>
+      </div>
+
+      <div class="btn-container">
+        Speed: <b><span id="speed"></span></b><br />
+        <button id="pauseResume">STOP</button>
+        <button id="resetGame">RESET</button>
+      </div>
+
+      <div>
+        Total Weight : <b> <span id="rightWeight"></span></b> <br /><br />
+        Total Momentum: <b><span id="rightMomentum"></span></b>
+      </div>
+    </div>
+
+    <canvas id="simulation" width="500" height="300"></canvas>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
