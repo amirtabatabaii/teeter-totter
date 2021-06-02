@@ -218,7 +218,7 @@ import Bar from "./components/bar.js";
       );
       if (mainState.getSimulationState() === 1) {
         update();
-        button.innerHTML = "STOP";
+        button.innerHTML = "PAUSE";
       } else {
         button.innerHTML = "RESUME";
       }
